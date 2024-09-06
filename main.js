@@ -68,9 +68,11 @@ inBtn.addEventListener('click', ()=>{
    for (let key in users) {
       if  (emailUser===users[key].email&&passUser===users[key].pass) {
            return alert('Добро пожаловать!');
-        } else {return alert('Неверное имя пользователя или пароль') } //
+        } else {return alert('Неверное имя пользователя или пароль'); } //
       }
-   
+   if (!users[0]){
+      alert('Неверное имя пользователя или пароль');
+   }
    
 })
 
