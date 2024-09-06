@@ -83,7 +83,7 @@ clearPass.addEventListener('click', ()=>{
       if  (emailUser===users[key].email) {
            users[key].pass = prompt('Введите новый пароль.');
            return
-        } else {return alert('Пользовательне найден. зарегистрируйтесь') } //
+        } else {continue;} //
       }
       alert('Пользователя не существует. зарегистрируйтесь')
 })
